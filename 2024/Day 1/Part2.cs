@@ -1,6 +1,6 @@
 ﻿namespace AdventOfCode._2024.Day1
 {
-    public class Part1
+    public class Part2
     {
         private List<int> _left = [];
         private List<int> _right = [];
@@ -9,13 +9,11 @@
         {
             ParseInput(fileLocation);  
 
-            var left = _left.OrderDescending();
-            var right = _right.OrderDescending();
             var total = 0;
             
-            for (int i = 0; i < left.Count(); i++)
+            for (int i = 0; i < _left.Count; i++)
             {
-                total += Math.Abs(left.ElementAt(i) - right.ElementAt(i));
+                total += _left[i] * _right.Where(x => x == _left[i]).Count();
             }
 
             Console.WriteLine(total);
