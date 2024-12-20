@@ -1,8 +1,4 @@
-﻿
-
-
-
-namespace AdventOfCode._2024.Day19
+﻿namespace AdventOfCode._2024.Day19
 {
     public class Part1
     {
