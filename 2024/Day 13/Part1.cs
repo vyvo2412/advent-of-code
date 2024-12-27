@@ -42,6 +42,7 @@ namespace AdventOfCode._2024.Day13
             }
             return solutions;
         }
+        
         private void ParseInput(string fileLocation)
         {
             int lineNum = 0;
@@ -93,7 +94,7 @@ namespace AdventOfCode._2024.Day13
         public int ButtonAY { get; set; }
         public int ButtonBX { get; set; }
         public int ButtonBY { get; set; }
-        public double PrizeX { get; set; }
-        public double PrizeY { get; set; }
+        public long  PrizeX { get; set; }
+        public long  PrizeY { get; set; }
     }
 }
